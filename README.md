@@ -39,7 +39,7 @@ otx = OTXv2("API_KEY")
 # Get all the indicators associated with a pulse
 indicators = otx.get_pulse_indicators("pulse_id")
 for indicator in indicators:
-    print indicator["indicator"] + indicator["type"]
+    print (indicator["indicator"] + indicator["type"])
 # Get everything OTX knows about google.com
 otx.get_indicator_details_full(IndicatorTypes.DOMAIN, "google.com")
 ```
